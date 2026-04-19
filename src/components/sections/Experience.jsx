@@ -28,7 +28,7 @@ const Experience = () => {
             <div className="max-w-[1300px] mx-auto px-8 pt-20 pb-32 relative">
 
                 {/* Header Section */}
-                <div className="text-center mb-24 relative z-10">
+                <div className="reveal text-center mb-24 relative z-10">
                     <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm block mb-4">MY EXPERIENCES</span>
                     <h2 className="text-white text-5xl md:text-6xl font-serif">Where I've Been Employed</h2>
                 </div>
@@ -36,7 +36,7 @@ const Experience = () => {
                 {/* Experience List */}
                 <div className="max-w-[1100px] mx-auto flex flex-col">
                     {experiences.map((exp, index) => (
-                        <div key={index} className={`flex flex-col md:grid md:grid-cols-[1fr_1.5fr] gap-8 md:gap-20 py-16 ${index !== experiences.length - 1 ? 'border-b border-white/10' : ''}`}>
+                        <div key={index} className={`reveal flex flex-col md:grid md:grid-cols-[1fr_1.5fr] gap-8 md:gap-20 py-16 ${index !== experiences.length - 1 ? 'border-b border-white/10' : ''}`}>
                             {/* Left Side: Role & Date */}
                             <div>
                                 <h3 className="text-2xl font-manrope font-bold text-white mb-2">

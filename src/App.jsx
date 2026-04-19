@@ -1,4 +1,5 @@
 import './index.css';
+import useScrollReveal from './hooks/useScrollReveal';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import Intro from './components/sections/Intro';
@@ -11,6 +12,8 @@ import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
 
 function App() {
+  useScrollReveal();
+
   return (
     <div className="min-h-screen bg-[#081B28] overflow-x-hidden relative">
       

@@ -5,7 +5,8 @@ const Achievements = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const cardWidth = scrollRef.current.offsetWidth / 2;
+      const card = scrollRef.current.querySelector('.ach-card');
+      const cardWidth = card ? card.offsetWidth : scrollRef.current.offsetWidth;
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -cardWidth - 24 : cardWidth + 24,
         behavior: 'smooth',
@@ -14,25 +15,25 @@ const Achievements = () => {
   };
 
   return (
-    <section id="achievement" className="pt-0 pb-40 scroll-mt-20">
+    <section id="achievement" className="pt-0 pb-20 md:pb-40 scroll-mt-20">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-        <div className="flex justify-between items-center mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-accent-green tracking-tight uppercase">
+        <div className="reveal flex justify-between items-center mb-10 md:mb-16">
+          <h2 className="font-heading text-2xl md:text-5xl font-bold text-accent-green tracking-tight uppercase">
             MY ACHIVEMENT
           </h2>
-          <div className="flex gap-4">
-            <button onClick={() => scroll('left')} className="bg-[#1a2c3a] border border-white/5 text-white w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-accent-green hover:text-black hover:scale-105 active:scale-95 group shadow-lg">
-              <i className="bi bi-chevron-left text-xl transition-transform group-hover:-translate-x-0.5"></i>
+          <div className="flex gap-2 md:gap-4">
+            <button onClick={() => scroll('left')} className="bg-[#1a2c3a] border border-white/5 text-white w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-accent-green hover:text-black hover:scale-105 active:scale-95 group shadow-lg">
+              <i className="bi bi-chevron-left text-base md:text-xl transition-transform group-hover:-translate-x-0.5"></i>
             </button>
-            <button onClick={() => scroll('right')} className="bg-[#1a2c3a] border border-white/5 text-white w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-accent-green hover:text-black hover:scale-105 active:scale-95 group shadow-lg">
-              <i className="bi bi-chevron-right text-xl transition-transform group-hover:translate-x-0.5"></i>
+            <button onClick={() => scroll('right')} className="bg-[#1a2c3a] border border-white/5 text-white w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-accent-green hover:text-black hover:scale-105 active:scale-95 group shadow-lg">
+              <i className="bi bi-chevron-right text-base md:text-xl transition-transform group-hover:translate-x-0.5"></i>
             </button>
           </div>
         </div>
 
-        <div ref={scrollRef} className="flex gap-x-12 overflow-x-hidden scroll-smooth">
+        <div ref={scrollRef} className="reveal reveal-delay-2 flex gap-x-6 md:gap-x-12 overflow-x-hidden scroll-smooth">
           {/* Achievement 1 */}
-          <div className="group min-w-[calc(50%-24px)]">
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
                 src="/Assets/silver-medal-iiiex.png"
@@ -57,7 +58,7 @@ const Achievements = () => {
           </div>
 
           {/* Achievement 2 */}
-          <div className="group min-w-[calc(50%-24px)]">
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
                 src="/Assets/bronze-medal-iwsc.png"
@@ -81,7 +82,7 @@ const Achievements = () => {
           </div>
 
           {/* Achievement 3 */}
-          <div className="group min-w-[calc(50%-24px)]">
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
                 src="/Assets/Best Champion Sintech.png"
@@ -105,7 +106,7 @@ const Achievements = () => {
           </div>
 
           {/* Achievement 4 */}
-          <div className="group min-w-[calc(50%-24px)]">
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
                 src="/Assets/mapres-ti.png"
@@ -128,7 +129,7 @@ const Achievements = () => {
           </div>
           
           {/* Achievement 5 */}
-          <div className="group min-w-[calc(50%-24px)]">
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
                 src="/Assets/silver-medal.png"
@@ -152,7 +153,7 @@ const Achievements = () => {
           </div>
 
           {/* Achievement 6 */}
-          <div className="group min-w-[calc(50%-24px)]">
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
                 src="/Assets/3rd-place.png"
@@ -176,7 +177,7 @@ const Achievements = () => {
           </div>
 
           {/* Achievement 7 */}
-          <div className="group min-w-[calc(50%-24px)]">
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
                 src="/Assets/harapan-1.png"
