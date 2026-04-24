@@ -20,7 +20,7 @@ const Intro = () => {
                            </div>
                           <div className="flex items-center gap-3 md:gap-4 flex-wrap">
                               <span className="font-heading text-lg md:text-3xl font-medium text-white">Currently, I'm a UI Designer Intern at</span>
-                              <img src="/Assets/logo-lion-parcel.png" alt="Lion Parcel Logo" className="h-6 md:h-10 w-auto" />
+                              <img src="/Assets/logo-erp.png" alt="Lion Parcel Logo" className="h-6 md:h-10 w-auto" />
                           </div>
                       </div>
                   </div>

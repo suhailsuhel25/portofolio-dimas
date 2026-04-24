@@ -89,6 +89,126 @@ const Projects = () => {
               </p>
             </div>
           </div>
+
+          {/* Project 3 */}
+          <div className="project-card group min-w-full md:min-w-[calc(50%-24px)]">
+            <div className="relative bg-[#162734] p-5 md:p-10 rounded-[40px] mb-8 overflow-hidden transition-all duration-500 border border-white/[0.03] shadow-2xl group-hover:shadow-accent-green/5 group-hover:border-white/[0.08]">
+              {/* Inner Mockup Frame */}
+              <div className="relative rounded-[20px] overflow-hidden shadow-2xl transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                <img
+                  src="/Assets/screenshot-web-desain.png"
+                  alt="Web Desain Screenshot"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="pl-2">
+              <span className="text-accent-green font-semibold text-sm mb-4 block tracking-wide">
+                Featured Project
+              </span>
+              <h3 className="font-heading text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 tracking-tight">
+                WEB DESAIN
+              </h3>
+              <p className="text-text-secondary text-base md:text-lg leading-relaxed text-left max-w-[95%]">
+                A digital education website that utilizes Artificial Intelligence
+                (AI) technology to make the learning process more interactive,
+                effective, and personalized. The platform is designed to assist
+                students in understanding course material through intelligent
+                chatbots and an AI-based quiz system that adapts to the user's
+                abilities.
+              </p>
+            </div>
+          </div>
+
+          {/* Project 4 */}
+          <div className="project-card group min-w-full md:min-w-[calc(50%-24px)]">
+            <div className="relative bg-[#162734] p-5 md:p-10 rounded-[40px] mb-8 overflow-hidden transition-all duration-500 border border-white/[0.03] shadow-2xl group-hover:shadow-accent-green/5 group-hover:border-white/[0.08]">
+              {/* Inner Mockup Frame */}
+              <div className="relative rounded-[20px] overflow-hidden shadow-2xl transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                <img
+                  src="/Assets/screenshot-bmkg.png"
+                  alt="BMKG Screenshot"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="pl-2">
+              <span className="text-accent-green font-semibold text-sm mb-4 block tracking-wide">
+                Featured Project
+              </span>
+              <h3 className="font-heading text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 tracking-tight">
+                BMKG
+              </h3>
+              <p className="text-text-secondary text-base md:text-lg leading-relaxed text-left max-w-[95%]">
+                A digital education website that utilizes Artificial Intelligence
+                (AI) technology to make the learning process more interactive,
+                effective, and personalized. The platform is designed to assist
+                students in understanding course material through intelligent
+                chatbots and an AI-based quiz system that adapts to the user's
+                abilities.
+              </p>
+            </div>
+          </div>
+
+          {/* Project 5 */}
+          <div className="project-card group min-w-full md:min-w-[calc(50%-24px)]">
+            <div className="relative bg-[#162734] p-5 md:p-10 rounded-[40px] mb-8 overflow-hidden transition-all duration-500 border border-white/[0.03] shadow-2xl group-hover:shadow-accent-green/5 group-hover:border-white/[0.08]">
+              {/* Inner Mockup Frame */}
+              <div className="relative rounded-[20px] overflow-hidden shadow-2xl transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                <img
+                  src="/Assets/screenshot-pemilu.png"
+                  alt="Pemilu Screenshot"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="pl-2">
+              <span className="text-accent-green font-semibold text-sm mb-4 block tracking-wide">
+                Featured Project
+              </span>
+              <h3 className="font-heading text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 tracking-tight">
+                PEMILU
+              </h3>
+              <p className="text-text-secondary text-base md:text-lg leading-relaxed text-left max-w-[95%]">
+                A digital education website that utilizes Artificial Intelligence
+                (AI) technology to make the learning process more interactive,
+                effective, and personalized. The platform is designed to assist
+                students in understanding course material through intelligent
+                chatbots and an AI-based quiz system that adapts to the user's
+                abilities.
+              </p>
+            </div>
+          </div>
+
+          {/* Project 6 */}
+          <div className="project-card group min-w-full md:min-w-[calc(50%-24px)]">
+            <div className="relative bg-[#162734] p-5 md:p-10 rounded-[40px] mb-8 overflow-hidden transition-all duration-500 border border-white/[0.03] shadow-2xl group-hover:shadow-accent-green/5 group-hover:border-white/[0.08]">
+              {/* Inner Mockup Frame */}
+              <div className="relative rounded-[20px] overflow-hidden shadow-2xl transition-transform duration-700 ease-out group-hover:scale-[1.02]">
+                <img
+                  src="/Assets/screenshot-web-design-2.png"
+                  alt="Web Design 2 Screenshot"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="pl-2">
+              <span className="text-accent-green font-semibold text-sm mb-4 block tracking-wide">
+                Featured Project
+              </span>
+              <h3 className="font-heading text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 tracking-tight">
+                WEB DESIGN 2
+              </h3>
+              <p className="text-text-secondary text-base md:text-lg leading-relaxed text-left max-w-[95%]">
+                A digital education website that utilizes Artificial Intelligence
+                (AI) technology to make the learning process more interactive,
+                effective, and personalized. The platform is designed to assist
+                students in understanding course material through intelligent
+                chatbots and an AI-based quiz system that adapts to the user's
+                abilities.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -10,8 +10,7 @@ const Footer = () => {
                     <div className="flex gap-5">
                         <a href="https://www.instagram.com/dimasalfa.rizky/" className="text-xl transition-all hover:-translate-y-1 hover:text-white"><i className="bi bi-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/dimas-alfa-rizky-6b0291291/" className="text-xl transition-all hover:-translate-y-1 hover:text-white"><i className="bi bi-linkedin"></i></a>
-                        <a href="#" className="text-xl transition-all hover:-translate-y-1 hover:text-white"><i className="bi bi-facebook"></i></a>
-                        <a href="#" className="text-xl transition-all hover:-translate-y-1 hover:text-white"><i className="bi bi-dribbble"></i></a>
+                        <a href="https://dribbble.com/Dimas_1006" className="text-xl transition-all hover:-translate-y-1 hover:text-white"><i className="bi bi-dribbble"></i></a>
                     </div>
                 </div>
             </div>
