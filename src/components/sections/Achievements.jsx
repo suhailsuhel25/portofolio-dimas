@@ -2,15 +2,20 @@ import { useRef } from 'react';
 
 const Achievements = () => {
   const scrollRef = useRef(null);
+  const isScrolling = useRef(false);
 
   const scroll = (direction) => {
-    if (scrollRef.current) {
-      const card = scrollRef.current.querySelector('.ach-card');
-      const cardWidth = card ? card.offsetWidth : scrollRef.current.offsetWidth;
-      scrollRef.current.scrollBy({
-        left: direction === 'left' ? -cardWidth - 24 : cardWidth + 24,
+    if (scrollRef.current && !isScrolling.current) {
+      isScrolling.current = true;
+      const container = scrollRef.current;
+      const gap = parseInt(getComputedStyle(container).columnGap) || 24;
+      const card = container.querySelector('.ach-card');
+      const cardWidth = card ? card.offsetWidth : container.offsetWidth;
+      container.scrollBy({
+        left: direction === 'left' ? -(cardWidth + gap) : cardWidth + gap,
         behavior: 'smooth',
       });
+      setTimeout(() => { isScrolling.current = false; }, 600);
     }
   };
 
@@ -32,11 +37,57 @@ const Achievements = () => {
         </div>
 
         <div ref={scrollRef} className="reveal reveal-delay-2 flex gap-x-6 md:gap-x-12 overflow-x-hidden scroll-smooth">
+          {/* Achievement - INNOPA */}
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
+            <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
+              <img
+                src="/Assets/sok-ganteng.jpeg"
+                alt="INNOPA Publication"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg-color/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
+            <div className="pl-4">
+              <p className="text-white/60 text-sm mb-4 font-medium tracking-wide">
+                Des 2025
+              </p>
+              <h3 className="text-accent-green font-heading text-2xl md:text-3xl font-bold mb-5 leading-tight tracking-tight">
+                Diterbitkan oleh INNOPA ( Indonesian Invention and Innovation Promotion Association )
+              </h3>
+              <p className="text-text-secondary text-lg leading-relaxed max-w-[95%]">
+                Diterbitkan oleh INNOPA ( Indonesian Invention and Innovation Promotion Association ) · Des 2025
+              </p>
+            </div>
+          </div>
+
+          {/* Achievement - IYC */}
+          <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
+            <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
+              <img
+                src="/Assets/iyc.jpeg"
+                alt="IYC Gold Medal"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg-color/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
+            <div className="pl-4">
+              <p className="text-white/60 text-sm mb-4 font-medium tracking-wide">
+                2025
+              </p>
+              <h3 className="text-accent-green font-heading text-2xl md:text-3xl font-bold mb-5 leading-tight tracking-tight">
+                Gold Medal In Internasional Youthpreneur Competition
+              </h3>
+              <p className="text-text-secondary text-lg leading-relaxed max-w-[95%]">
+                Diterbitkan oleh INVENTIFY
+              </p>
+            </div>
+          </div>
+
           {/* Achievement 1 */}
           <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
               <img
-                src="/Assets/silver-medal-iiiex.png"
+                src="/Assets/wseec.jpeg"
                 alt="Silver Medal IIIEX"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
@@ -127,7 +178,7 @@ const Achievements = () => {
               </p>
             </div>
           </div>
-          
+
           {/* Achievement 5 */}
           <div className="ach-card group min-w-full md:min-w-[calc(50%-24px)]">
             <div className="relative aspect-[4/3] md:aspect-[1.4/1] mb-10 overflow-hidden rounded-[140px_25px_140px_25px] border border-white/5 shadow-2xl transition-all duration-500 group-hover:border-accent-green/20 group-hover:shadow-accent-green/5">
@@ -199,6 +250,7 @@ const Achievements = () => {
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>

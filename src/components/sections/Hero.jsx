@@ -140,7 +140,12 @@ const Hero = () => {
         {/* Subtitle */}
         <div className="hero-fade-in hero-fade-in-1 flex items-center gap-3">
           <div className="w-8 md:w-12 h-[1px] bg-gradient-to-r from-transparent to-accent-green/60"></div>
-          <span className="text-accent-green/70 text-xs md:text-sm font-medium tracking-[0.3em] uppercase font-poppins">Creative Designer & Developer</span>
+          <span 
+            className="text-accent-green/70 text-xs md:text-sm font-medium uppercase font-poppins text-center" 
+            style={{ letterSpacing: '0.3em', paddingLeft: '0.3em' }}
+          >
+            Creative Designer & Developer
+          </span>
           <div className="w-8 md:w-12 h-[1px] bg-gradient-to-l from-transparent to-accent-green/60"></div>
         </div>
 
@@ -160,13 +165,7 @@ const Hero = () => {
             <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
           </svg>
           <div className="w-16 md:w-24 h-[1px] bg-gradient-to-l from-transparent to-accent-green/40"></div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="hero-fade-in hero-fade-in-4 absolute -bottom-20 md:-bottom-28 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-          <span className="text-white/50 text-[10px] md:text-xs tracking-[0.2em] uppercase font-poppins">Scroll</span>
-          <div className="w-[1px] h-8 md:h-12 bg-gradient-to-b from-white/40 to-transparent animate-pulse"></div>
-        </div>
+        </div>        
       </div>
     </section>
   );
