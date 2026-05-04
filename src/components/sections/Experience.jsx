@@ -11,14 +11,26 @@ const Experience = () => {
         {
             role: "UI/UX Designer",
             company: "Redikref",
-            duration: "Juni - Saat ini / Remote, Indonesia",
+            duration: "Jun 2025 - Jan 2026 / Remote, Indonesia",
             desc: "Involved in website development for clients with various needs, from landing pages to web-based systems. Responsible for interface (UI) design, user experience (UX), and feature implementation according to client requirements."
         },
         {
             role: "UI/UX Designer",
             company: "Sintech",
-            duration: "April - Juni 2025 / Semarang, Indonesia",
+            duration: "Apr 2025 - Jun 2025 / Semarang, Indonesia",
             desc: "Contribute as part of a bootcamp-led team to website and application-based projects. Participate in the design, development, and presentation of projects as a simulation of working in the industrial world."
+        },
+        {
+            role: "UI/UX Designer",
+            company: "Mitrasol",
+            duration: "Feb 2026 - Currently / Semarang, Indonesia",
+            desc: "As a UI/UX Designer for the Mitrasol project, I took full responsibility for transforming the vision of this partnership service into a coherent digital ecosystem across both web and mobile platforms."
+        },
+        {
+            role: "UI/UX Designer",
+            company: "Mentor Sintech",
+            duration: "Apr 2026 - Jun 2026 / Semarang, Indonesia",
+            desc: "As a UI/UX Design Mentor, I led a 16-session intensive course covering the full product design lifecycle. I balanced theory with hands-on Figma practice, guiding students from initial research to high-fidelity prototyping with a focus on user-centered design and real-world problem-solving."
         }
     ];
 
