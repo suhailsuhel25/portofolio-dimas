@@ -52,7 +52,7 @@ const Achievements = () => {
                 Des 2025
               </p>
               <h3 className="text-accent-green font-heading text-2xl md:text-3xl font-bold mb-5 leading-tight tracking-tight">
-                Diterbitkan oleh INNOPA ( Indonesian Invention and Innovation Promotion Association )
+                Silver Medal in Seoul International Invention Fair (SIIF) 2025
               </h3>
               <p className="text-text-secondary text-lg leading-relaxed max-w-[95%]">
                 Diterbitkan oleh INNOPA ( Indonesian Invention and Innovation Promotion Association ) · Des 2025
